@@ -1,18 +1,26 @@
 export default function Header() {
   return (
-    <header className="fixed top-0 z-50 w-full bg-white/80 backdrop-blur border-b">
-      <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-        <span className="font-bold text-xl">LOGO</span>
+    <header className="fixed top-0 left-0 w-full z-50 bg-black/30 backdrop-blur-md">
+      <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+        {/* Logo */}
+        <div className="text-white font-bold text-xl">
+          HAJA
+        </div>
 
-        <nav className="hidden md:flex gap-6 text-sm font-medium">
-          <a href="#" className="hover:text-blue-600">Início</a>
-          <a href="#" className="hover:text-blue-600">Projetos</a>
-          <a href="#" className="hover:text-blue-600">Sobre</a>
-          <a href="#" className="hover:text-blue-600">Contato</a>
+        {/* Menu */}
+        <nav className="hidden md:flex gap-6 text-white text-sm">
+          <a href="#" className="hover:text-orange-400">Home</a>
+          <a href="#">Quem Somos</a>
+          <a href="#">Transparência</a>
+          <a href="#">Como Apoiar</a>
+          <a href="#">Programas</a>
+          <a href="#">Blog</a>
+          <a href="#">Contato</a>
         </nav>
 
-        <button className="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm hover:bg-blue-700 transition">
-          Apoiar
+        {/* Botão */}
+        <button className="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded">
+          Quero Doar
         </button>
       </div>
     </header>

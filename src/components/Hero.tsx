@@ -1,31 +1,31 @@
 export default function Hero() {
   return (
-    <section className="bg-gray-50">
-      <div className="max-w-7xl mx-auto px-6 py-24 grid lg:grid-cols-2 gap-16 items-center">
-        
-        <div>
-          <h1 className="text-4xl md:text-5xl font-bold leading-tight">
-            Impacto social começa com ação
-          </h1>
+    <section className="relative h-screen w-full overflow-hidden">
+      {/* Vídeo */}
+      <video
+        autoPlay
+        muted
+        loop
+        playsInline
+        className="absolute inset-0 w-full h-full object-cover"
+      >
+        <source src="/videos/hero.mp4" type="video/mp4" />
+      </video>
 
-          <p className="mt-6 text-gray-600 max-w-xl">
-            Uma iniciativa dedicada a transformar realidades através de projetos
-            sociais, educação e apoio comunitário.
-          </p>
+      {/* Overlay escuro */}
+      <div className="absolute inset-0 bg-black/50" />
 
-          <div className="mt-10 flex gap-4">
-            <button className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition">
-              Conhecer projetos
-            </button>
-            <button className="border px-6 py-3 rounded-lg hover:bg-gray-100 transition">
-              Apoiar iniciativa
-            </button>
-          </div>
-        </div>
+      {/* Conteúdo central */}
+      <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-4">
+        <h1 className="text-white text-3xl md:text-5xl font-bold max-w-4xl">
+          Ajudando crianças & suas famílias
+          <br />
+          no combate à extrema pobreza
+        </h1>
 
-        <div className="relative h-[380px] rounded-2xl bg-gray-200 flex items-center justify-center">
-          <span className="text-gray-500">Imagem / Vídeo</span>
-        </div>
+        <button className="mt-8 bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded text-lg">
+          Seja um apoiador
+        </button>
       </div>
     </section>
   );
