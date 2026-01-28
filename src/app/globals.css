@@ -1,0 +1,12 @@
+@import "tailwindcss/preflight";
+@import "tailwindcss/utilities";
+
+/* ajustes globais opcionais */
+html {
+  scroll-behavior: smooth;
+}
+/*
+body {
+  @apply bg-white text-gray-900;
+}
+*/
